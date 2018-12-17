@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "tinkerbellflight:items/Cage"
+        "layer0": "tinkerbellflight:items/cage"
      }
 }

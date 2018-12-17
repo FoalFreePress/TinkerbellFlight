@@ -9,7 +9,7 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 public class Cage extends Item {
-	public static final String NAME = "Cage";
+	public static final String NAME = "cage";
 	public Cage() {
 		setUnlocalizedName(NAME);
 		setRegistryName(NAME);
@@ -18,15 +18,10 @@ public class Cage extends Item {
 		setCreativeTab(CreativeTabs.TOOLS);
 		setMaxDamage(0);
 		setNoRepair();
-
 	}
 	
 	@Override
 	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
 		return super.onItemRightClick(worldIn, playerIn, handIn);
-		
-	}
-	
-	public void registerModels() {
 	}
 }
