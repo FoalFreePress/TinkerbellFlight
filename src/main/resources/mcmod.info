@@ -1,0 +1,12 @@
+[
+{
+  "modid": "tinkerbellflight",
+  "name": "Tinkerbell Flight",
+  "description": "Put Tinkerbell in a Cage and make you fly!",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "authorList": ["SweetieBelle", ""],
+  "screenshots": [],
+  "dependencies": []
+}
+]
