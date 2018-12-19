@@ -10,20 +10,16 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = TinkerbellFlight.MODID)
 public class EventManager {
-	@SubscribeEvent
-	public void register(RegistryEvent.Register<Item> event) {
-		event.getRegistry().registerAll(new Cage());
-		TinkerbellFlight.logger.info("registerItem called!");
-	}
-
-	@SubscribeEvent
-	public void registerRenders(ModelRegistryEvent event) {
-		this.registerItem(new Cage(), 0, "inventory");
-	}
-	
-	
-	
-	public void registerItem(Item item, int meta, String space) {
-		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), space));
+    
+    public static final Cage cage = new Cage();
+    
+    @SubscribeEvent
+    public static void onItemRegister(RegistryEvent.Register<Item> event) {
+        event.getRegistry().registerAll(cage);
+    }
+    
+    @SubscribeEvent
+    public static void onModelRegister(ModelRegistryEvent event) {
+		ModelLoader.setCustomModelResourceLocation(cage, 0, new ModelResourceLocation(cage.getRegistryName(), "inventory"));
 	}
 }

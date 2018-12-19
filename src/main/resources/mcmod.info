@@ -7,6 +7,6 @@
   "mcversion": "${mcversion}",
   "authorList": ["SweetieBelle", ""],
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["immersiveengineering"]
 }
 ]
