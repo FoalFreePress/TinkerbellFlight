@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tinkerbellflight:tinkerbell"
+    },
+    {
+      "item": "tinkerbellflight:cage"
+    }
+  ],
+    "result":
+    {
+        "item": "tinkerbellflight:tinkerbell_in_a_cage",
+        "count": 1,
+        "data": 0
+    }
+}
